@@ -93,13 +93,10 @@ unsigned long complete(char* line, int sz) {
 }
 
 int invalid(char* line, int sz) {
-
-    // Else we need to allocate for the stack
     char stack[MAX_LINE];
-    int i = 0, j = 0;
 
     // Iterate through all 'i' characters of 'line'
-    for (/**/; i < sz; i++) {
+    for (int i = 0, j = 0; i < sz; i++) {
         char head = line[i];
 
         // If the 'head' is an opener, 
