@@ -209,6 +209,12 @@ unsigned long syntax(char* fname) {
 }
 
 int main(int argc, char* argv[]) {
-    printf("Final Score: %lu\n", syntax("./test_05.in"));
-    return 0;
+
+    // Part A
+    printf("Final Score: %lu\n", syntax("./test_01.in"));
+
+    // Part B
+    printf("Final Score: %lu\n", syntax("./test_05.in"));    
+
+    return EXIT_SUCCESS;
 }
